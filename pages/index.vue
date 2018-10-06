@@ -71,7 +71,7 @@ export default {
           backedImg: require("../assets/cards/z01.png"),
           ruleIcon: require("../assets/ruleIcon.png"),
           timerIcon: require("../assets/clock.gif"),
-          timer: 3,
+          timer: 120,
       }
   },
   mounted() {
@@ -107,7 +107,7 @@ export default {
       location.reload("/");
     },
     startCountDown(){
-      if (this.timer === 3){
+      if (this.timer === 120){
         this.count();
         this.interval = setInterval(this.count, 1000);
       }
