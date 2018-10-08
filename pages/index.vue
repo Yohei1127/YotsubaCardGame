@@ -114,6 +114,7 @@ export default {
     },
     count(){
       console.log(this.timer);
+      this.openedCards.length === 0 ? clearInterval(this.interval) : ''; //タイマー止め
       this.timer > 0 ? this.timer -- :  '';
     }
   },

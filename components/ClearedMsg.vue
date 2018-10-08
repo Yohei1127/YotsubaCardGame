@@ -1,6 +1,6 @@
 <template>
   <div class="modal-overlay">
-    <div class="modal-window">
+    <div class="cleared-window">
       <img :src="clearedMsg" style="width:100%; height:100%">
       <div class="msg">
         <div class="home" @click="closeClearedWindow">戻る</div>
@@ -17,7 +17,7 @@ export default {
   },
   data () {
       return {
-          clearedMsg: require("../assets/giphy.gif"),
+          clearedMsg: require("../assets/congrats.gif"),
       }
   },
 }
@@ -37,7 +37,7 @@ export default {
   background:rgba(0, 0, 0, 0.5);
 }
 
-.modal-window{
+.cleared-window{
   background: #fff;
   height: 450px;
   width: 600px;
